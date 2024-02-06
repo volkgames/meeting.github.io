@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script
+      src="https://8x8.vc/vpaas-magic-cookie-4252dd4bba8a4cfb85ec6a09d932a32a/external_api.js"
+      async
+    ></script>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      html,
+      body,
+      #jaas-container {
+        height: 100%;
+      }
+    </style>
+    <script type="text/javascript">
+      window.onload = () => {
+        const api = new JitsiMeetExternalAPI("8x8.vc", {
+          roomName:
+            "vpaas-magic-cookie-4252dd4bba8a4cfb85ec6a09d932a32a/SampleAppCompulsoryActivationsPhotographSteadily",
+          parentNode: document.querySelector("#jaas-container"),
+          // Make sure to include a JWT if you intend to record,
+          // make outbound calls or use any other premium features!
+          // jwt: "eyJraWQiOiJ2cGFhcy1tYWdpYy1jb29raWUtNDI1MmRkNGJiYThhNGNmYjg1ZWM2YTA5ZDkzMmEzMmEvOGZmM2YyLVNBTVBMRV9BUFAiLCJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiJqaXRzaSIsImlzcyI6ImNoYXQiLCJpYXQiOjE3MDcyMDIwNzksImV4cCI6MTcwNzIwOTI3OSwibmJmIjoxNzA3MjAyMDc0LCJzdWIiOiJ2cGFhcy1tYWdpYy1jb29raWUtNDI1MmRkNGJiYThhNGNmYjg1ZWM2YTA5ZDkzMmEzMmEiLCJjb250ZXh0Ijp7ImZlYXR1cmVzIjp7ImxpdmVzdHJlYW1pbmciOmZhbHNlLCJvdXRib3VuZC1jYWxsIjpmYWxzZSwic2lwLW91dGJvdW5kLWNhbGwiOmZhbHNlLCJ0cmFuc2NyaXB0aW9uIjpmYWxzZSwicmVjb3JkaW5nIjpmYWxzZX0sInVzZXIiOnsiaGlkZGVuLWZyb20tcmVjb3JkZXIiOmZhbHNlLCJtb2RlcmF0b3IiOnRydWUsIm5hbWUiOiJUZXN0IFVzZXIiLCJpZCI6Imdvb2dsZS1vYXV0aDJ8MTA0MDMwMTIwMzc1MzYwNDA5MzQwIiwiYXZhdGFyIjoiIiwiZW1haWwiOiJ0ZXN0LnVzZXJAY29tcGFueS5jb20ifX0sInJvb20iOiIqIn0.dz75ZGZFE0NUJK_bdQSU4itNv1sQnfeurpYhOyd0FCLk-aMN-TH4CNkW0FJjdiMqXIPEHfm-vg5Pt_bOsJ5DZPAbkpMp-SpJKLKtVL7TWD3jLTlS1B4JVWiDGKvE8tAlitHJVBP_kmZ_QKbrtRa8IamGqfpd3v7dkqdlmN_LtiH49M3YUpc-kH413qaMM4Dbh5nsSpbHP58X7yyJi2-ecHf9yd6w3z7H_-p-K3qzGXYttBaog1k1lg8bTTUOeeZxvDwNaRDVdtwKMENZuN2vESE9SaTdh3IzPxUiDmFLFPm8nGz4AGHm9XpCsDZhQqlqRzPmvJ1GsTtPd_amY-7K4w"
+        });
+      };
+    </script>
+  </head>
+  <body>
+    <div id="jaas-container" />
+  </body>
+</html>
